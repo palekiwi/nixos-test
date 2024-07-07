@@ -133,6 +133,7 @@
     neovim
     python3
     rsync
+    tree
     wget
     xfce.xfce4-terminal
     zsh

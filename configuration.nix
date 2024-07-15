@@ -69,8 +69,8 @@
   services.displayManager = {
     defaultSession = "none+awesome";
     autoLogin = {
-      enable = true;
-      user = "pl";
+      enable = false;
+      user = "ygt";
     };
   };
 
@@ -103,9 +103,9 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.pl = {
+  users.users.ygt = {
     isNormalUser = true;
-    description = "pl";
+    description = "ygt";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.zsh;
     openssh.authorizedKeys.keys = [
@@ -127,15 +127,12 @@
 
   environment.systemPackages = with pkgs; [
     git
-    gitui
-    gnupg
-    home-manager
     neovim
+    gnupg
     python3
     rsync
     tree
     wget
-    xfce.xfce4-terminal
     zsh
   ];
 
